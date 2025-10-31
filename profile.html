@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile – AdEarn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 25px 20px 10px;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      margin: 0;
+    }
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .profile-card {
+      background-color: #111;
+      padding: 30px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      border: 1px solid #333;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .profile-card h2 {
+      margin-bottom: 10px;
+    }
+
+    .profile-info {
+      text-align: left;
+      margin-top: 20px;
+      font-size: 0.95em;
+      line-height: 1.8em;
+    }
+
+    .balance {
+      margin-top: 25px;
+      padding: 15px;
+      border: 1px solid #333;
+      border-radius: 10px;
+      background-color: #222;
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: gray;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9em;
+      border-top: 1px solid #333;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Profile</h1>
+  </header>
+
+  <main>
+    <div class="profile-card">
+      <h2>Welcome, <span id="userName">User</span> 👋</h2>
+      <div class="profile-info">
+        <p><b>Email:</b> user@example.com</p>
+        <p><b>Member Since:</b> October 2025</p>
+        <p><b>Total Ads Watched:</b> 0</p>
+      </div>
+      <div class="balance">
+        💰 Current Balance: <span id="userBalance">0</span> Points
+      </div>
+      
+    </div>
+  </main>
+
+  <footer>
+    © 2025 AdEarn — All rights reserved
+  </footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History – AdEarn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 25px 20px 10px;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      margin: 0;
+    }
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 30px 20px;
+    }
+
+    .history-box {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 600px;
+      border: 1px solid #333;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      font-size: 0.95em;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #333;
+    }
+
+    th {
+      background-color: #222;
+    }
+
+    tr:nth-child(even) {
+      background-color: #1a1a1a;
+    }
+
+    tr:hover {
+      background-color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9em;
+      border-top: 1px solid #333;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ad Watch History</h1>
+  </header>
+
+  <main>
+    <div class="history-box">
+      <h2>Your Earning History</h2>
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Ad Name</th>
+          <th>Duration</th>
+          <th>Points Earned</th>
+        </tr>
+        <tr>
+          <td>30 Oct 2025</td>
+          <td>Promo Ad 1</td>
+          <td>30 sec</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>29 Oct 2025</td>
+          <td>Brand Ad 2</td>
+          <td>45 sec</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>28 Oct 2025</td>
+          <td>Reward Ad 3</td>
+          <td>20 sec</td>
+          <td>5</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 AdEarn — All rights reserved
+  </footer>
+</body>
+</html>

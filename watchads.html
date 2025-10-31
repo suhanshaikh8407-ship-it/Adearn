@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch Ads – AdEarn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 25px 20px 10px;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      margin: 0;
+    }
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .ads-box {
+      background-color: #111;
+      padding: 30px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+      border: 1px solid #333;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    video {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      background-color: #000;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: gray;
+      color: white;
+    }
+
+    p {
+      margin-top: 15px;
+      font-size: 0.9em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9em;
+      border-top: 1px solid #333;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Watch Ads</h1>
+  </header>
+
+  <main>
+    <div class="ads-box">
+      <h2>Earn by Watching Ads</h2>
+
+      <!-- Example Video (you can replace the src with your own ad link) -->
+      <video id="adVideo" controls>
+        <source src="sample-ad.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+
+      <button id="claimBtn" disabled>Watch the full ad to claim points</button>
+      <p id="statusMsg"></p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 AdEarn — All rights reserved
+  </footer>
+
+  <script>
+    const video = document.getElementById('adVideo');
+    const button = document.getElementById('claimBtn');
+    const statusMsg = document.getElementById('statusMsg');
+
+    video.addEventListener('ended', () => {
+      button.disabled = false;
+      button.textContent = "Claim Your Reward";
+      statusMsg.textContent = "";
+    });
+
+    button.addEventListener('click', () => {
+      button.disabled = true;
+      button.textContent = "Reward Claimed ✅";
+      statusMsg.textContent = "You earned 10 points!";
+    });
+  </script>
+</body>
+</html>
